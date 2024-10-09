@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eloquent</title>
+    </head>
+    <body>
+        <h1>EXERCISE</h1>
+        <h2>REVERSING AN ARRAY</h2>
+        <p>Arrays have a reverse method that changes the array by inverting the order in
+            which its elements appear. For this exercise, write two functions, reverseArray
+            and reverseArrayInPlace. The first, reverseArray, takes an array as argument
+            and produces a new array that has the same elements in the inverse order. The
+            second, reverseArrayInPlace, does what the reverse method does: it modifies
+            the array given as argument by reversing its elements. Neither may use the
+            standard reverse method.
+            Thinking back to the notes about side effects and pure functions in the
+            previous chapter, which variant do you expect to be useful in more situations?
+            Which one runs faster?</p>
+
+            <script>
+                const reverseArray = (arr) => {
+                    // Create a new empty array
+                    let newArr = [];
+                    // Find the last index of the array
+                    let lastIndex = arr.length - 1;
+                    // Loop over the input array backward
+                    for (let i = lastIndex; i >= 0; i--) {
+                        newArr.push(arr[i]); // Push the element into the new Array
+                    }
+                    // Return new array
+                    return newArr;
+                }
+                console.log(reverseArray([1,2,3,4,5]))
+
+                const reverseArrayInPlace = (arr) => {
+                    /* Find half the length of the array
+                     *use Math.floor to round down—you don’t need to touch the middle element
+                      in an array with an odd number of elements
+                    */
+                    let middle = Math.floor(arr.length / 2);
+                    // Find the last Index of the array
+                    let last = arr.length - 1;
+                    // Hold on to one of the elements
+                    let temp = 0;
+                    // Loop over half the length of the array
+                    for (let i = 0; i < middle; i++) {
+                        temp = arr[i]; // Hold the first element
+                        arr[i] = arr[last]; // Swap the first element with last element
+                        arr[last] = temp; // Put the first element in the place where the last element used to be
+                        last--; // Move backward to the next element
+                    }
+                    // Return the array
+                    return arr;
+                }
+                console.log(reverseArrayInPlace([1,2,3,4,5,6,7,8,9,10]));
+            </script>
+    </body>
+</html>
