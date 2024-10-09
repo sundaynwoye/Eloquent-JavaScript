@@ -1,6 +1,6 @@
 # Solutions for exercises in Eloquent JavaScript
 
-This book contains roughly three parts. The first 12 chapters discuss the JavaScript language. The next seven chapters are about web browsers and the way JavaScript is used to program them. Finally, two chapters are devoted to Node.js, another environment to program JavaScript in. There are five project chapters in the book that describe larger example programs to give you a taste of actual programming.
+The book contains roughly three parts. The first 12 chapters discuss the JavaScript language. The next seven chapters are about web browsers and the way JavaScript is used to program them. Finally, two chapters are devoted to Node.js, another environment to program JavaScript in. There are five project chapters in the book that describe larger example programs to give you a taste of actual programming.
 
 The language part of the book starts with four chapters that introduce the basic structure of the JavaScript language. They discuss control structures (such as the while word you saw in this introduction), functions (writing your own building blocks), and data structures. After these, you will be able to write basic programs. Next, Chapters 5 and 6 introduce techniques to use functions and objects to write more abstract code and keep complexity under control.
 
