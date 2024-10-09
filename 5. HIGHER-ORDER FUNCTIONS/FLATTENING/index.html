@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Eloquent JavaScript</title>
+    </head>
+    <body>
+        <h1>HIGHER-ORDER FUNCTIONS EXERCISE</h1>
+        <h2>FLATTENING</h2>
+        <p> Use the reduce method in combination with the concat method to “flatten”
+            an array of arrays into a single array that has all the elements of the original
+            arrays.
+        </p>
+        <script>
+            const flatten = (array) => {
+                return array.reduce((a, b) => a.concat(b));
+            }
+            console.log(flatten([["a", "b"],["c", "d"], ["e", "f"]]));
+        </script>
+    </body>
+</html>
